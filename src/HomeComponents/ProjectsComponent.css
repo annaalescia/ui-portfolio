@@ -1,0 +1,53 @@
+.projects-image-container h1 {
+  margin: 0;
+}
+
+.projects-image-container {
+  width: 100%;
+  background-image: url('../Assets/forest/smoky-mountains.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.projects-image-container.projects-image-water {
+  background-image: url('../Assets/water/jellies.jpg');
+}
+
+.projects-image-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(114, 123, 104, 0.8);
+  z-index: 10;
+}
+
+.projects-image-container.projects-image-water .projects-image-overlay {
+  background-color: rgba(18, 48, 76, 0.7);
+}
+
+.section-wrapper.projects-section {
+  z-index: 100;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-wrapper.projects-section .project-container {
+  flex: 1 0 150px;
+}
+
+.project-container a {
+  height: 100%;
+  width: 100%;
+}
+
+.project-container a img {
+  width: 100%;
+}

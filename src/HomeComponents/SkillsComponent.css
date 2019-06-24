@@ -1,0 +1,163 @@
+.grid {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0; /* Clears unordered list default of 40px */
+}
+
+.grid.skills-flex-container {
+  padding: 0rem 3rem 3rem 1rem;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid li {
+  list-style-type: none;
+  position: relative;
+  float: left;
+  width: 27.85714285714286%;
+  padding: 0 0 32.16760145166612% 0;
+  -o-transform: rotate(-60deg) skewY(30deg);
+  -moz-transform: rotate(-60deg) skewY(30deg);
+  -webkit-transform: rotate(-60deg) skewY(30deg);
+  -ms-transform: rotate(-60deg) skewY(30deg);
+  transform: rotate(-60deg) skewY(30deg);
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.grid li .hexagon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #727b68;
+  -o-transform: skewY(-30deg) rotate(60deg);
+  -moz-transform: skewY(-30deg) rotate(60deg);
+  -webkit-transform: skewY(-30deg) rotate(60deg);
+  -ms-transform: skewY(-30deg) rotate(60deg);
+  transform: skewY(-30deg) rotate(60deg);
+  overflow: hidden;
+}
+
+.skills-section-water .grid li .hexagon {
+  background: #4283ad;
+}
+
+.grid li * {
+  visibility: visible;
+}
+
+.grid li:nth-child(3n + 2) {
+  margin: 0 1%;
+}
+
+.grid li:nth-child(6n + 4),
+.grid li:nth-child(6n + 5),
+.grid li:nth-child(6n + 6) {
+  margin-top: -6.9285714285%;
+  margin-bottom: -6.9285714285%;
+  -o-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -moz-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  transform: translateX(50%) rotate(-60deg) skewY(30deg);
+}
+
+.grid li:nth-child(6n + 4) {
+  margin-left: 0.5%;
+}
+
+.grid .hexagon svg {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: #333;
+  cursor: pointer;
+  transition: width 1s ease;
+}
+
+.grid .hexagon svg:hover {
+  width: 55%;
+  transition: width 0.5s ease;
+}
+
+.skills-section-water .grid .hexagon svg {
+  fill: #12304c;
+}
+
+.section-wrapper.skills-section {
+  background-color: rgba(228, 216, 161, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-wrapper.skills-section.skills-section-water {
+  background-color: rgba(177, 205, 210, 0.3);
+}
+
+.section-wrapper.skills-section .skills-flex-container {
+  flex: 1 0 300px;
+}
+
+.skills-text-container .header-underline {
+  margin: 0 auto;
+}
+
+.section-wrapper.skills-section .skills-text-container {
+  padding: 0rem 4rem;
+}
+
+.section-wrapper.skills-section .skills-text-container p {
+  text-align: left;
+}
+
+.section-wrapper.skills-section .skills-text-container ul {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.section-wrapper.skills-section .skills-text-container ul li::before {
+  content: '\2022';
+  color: #727b68;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1em;
+}
+
+.section-wrapper.skills-section.skills-section-water
+  .skills-text-container
+  ul
+  li::before {
+  color: #4283ad;
+}
+
+.section-wrapper.skills-section .default-skill-text p {
+  font-size: 1.5rem;
+  padding: 1rem 0rem;
+}
+
+.section-wrapper.skills-section-water .header-underline {
+  background: #4283ad;
+}
+
+@media all and (max-width: 480px) {
+  .section-wrapper.skills-section {
+    padding: 0rem 2rem;
+  }
+  .grid.skills-flex-container {
+    padding: 1rem 1rem 3rem 1rem;
+  }
+
+  .section-wrapper.skills-section .skills-text-container {
+    padding: 0;
+  }
+}

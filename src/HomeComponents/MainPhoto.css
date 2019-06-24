@@ -1,0 +1,65 @@
+.main-image-container {
+  width: 100%;
+  height: 80vh;
+  background-image: url('../Assets/forest/Washington.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.main-image-container.main-image-water {
+  background-image: url('../Assets/water/seattle-water.jpg');
+}
+
+.main-image-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.main-image-container.main-image-water .main-image-text {
+  background-color: rgba(47, 16, 42, 0.7);
+}
+
+.main-image-container .main-image-text {
+  color: #fff;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  transform: translate(3rem, -50%);
+  text-align: left;
+  padding: 3rem;
+  left: 0;
+  background-color: rgba(79, 57, 56, 0.7);
+}
+
+.main-image-text h1 {
+  font-size: 6rem;
+}
+
+/* @media all and (max-width: 991px) {
+  ...;
+} */
+@media all and (max-width: 768px) {
+  .main-image-text h1 {
+    font-size: 4rem;
+  }
+}
+@media all and (max-width: 480px) {
+  .main-image-text h1 {
+    font-size: 3rem;
+  }
+
+  .main-image-container .main-image-text {
+    transform: translate(0, -50%);
+    padding: 2rem;
+  }
+}

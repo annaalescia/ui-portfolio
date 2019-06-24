@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import HomePage from './HomeComponents/HomePage';
+import ProjectPage from './ProjectComponents/ProjectPage';
+import TopNav from './GlobalComponents/TopNav';
+import Footer from './GlobalComponents/Footer';
+import { Switch, Route } from 'react-router-dom';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    theme: 'forest'
+  };
+
+  handleThemeChange = () => {
+    const { theme } = this.state;
+    if (theme === 'forest') {
+      this.setState({ theme: 'water' });
+    } else {
+      this.setState({ theme: 'forest' });
+    }
+  };
+
+  render() {
+    const { theme } = this.state;
+    return (
+      <div className="App">
+        <TopNav handleThemeChange={this.handleThemeChange} theme={theme} />
+
+        <Switch>
+          <Route exact path="/" render={_ => <HomePage theme={theme} />} />
+          <Route path="/:id" render={_ => <ProjectPage theme={theme} />} />
+        </Switch>
+
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;

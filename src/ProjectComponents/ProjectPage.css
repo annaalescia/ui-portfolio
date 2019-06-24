@@ -1,0 +1,92 @@
+.landing-content-wrapper {
+  background-color: rgba(228, 216, 161, 0.3);
+}
+
+.landing-content-wrapper.landing-content-water {
+  background-color: rgba(177, 205, 210, 0.3);
+}
+
+.project-content-wrapper {
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-image-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.project-image-container img {
+  width: 100%;
+}
+
+.landing-content-wrapper .project-information {
+  flex: 1 0 300px;
+  text-align: left;
+}
+
+.landing-content-wrapper .project-image-container {
+  flex: 1 0 300px;
+}
+
+.project-skills-list {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.project-skills-list .project-skill {
+  flex: 1 0 0;
+  background-color: #b7c89b;
+  color: #333;
+  margin: 0.2rem;
+  padding: 0.5rem;
+  border-radius: 25px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.project-information h2 {
+  font-size: 2rem;
+}
+
+.project-information {
+  position: relative;
+  padding: 0rem 2rem 2rem 0rem;
+}
+
+.project-information .header-underline {
+  width: 70px;
+  height: 5px;
+  background: #727b68;
+}
+
+.landing-content-wrapper.landing-content-water .header-underline {
+  background: #4283ad;
+}
+
+.landing-content-wrapper.landing-content-water .primary-btn {
+  background: #4283ad;
+}
+
+.landing-content-wrapper.landing-content-water .project-skill {
+  background-color: #b1cdd2;
+  color: #12304c;
+}
+
+.project-information .primary-btn {
+  position: absolute;
+}
+
+.project-information .prev-btn {
+  bottom: 0;
+  left: 0;
+}
+
+.project-information .next-btn {
+  bottom: 0;
+  right: 2rem;
+}

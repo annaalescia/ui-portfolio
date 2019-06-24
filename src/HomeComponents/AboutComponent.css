@@ -1,0 +1,144 @@
+.section-wrapper.about-section {
+  background-color: rgba(228, 216, 161, 0.3);
+}
+
+.section-wrapper {
+  padding: 3rem 5rem;
+}
+
+.section-wrapper .header-underline {
+  width: 70px;
+  height: 5px;
+  background: #727b68;
+}
+
+.section-wrapper.about-section-water .header-underline {
+  background: #4283ad;
+}
+
+.section-wrapper.about-section h1 {
+  text-align: left;
+}
+
+.section-wrapper.about-section.about-section-water {
+  background-color: rgba(177, 205, 210, 0.3);
+}
+
+.about-content-wrapper {
+  display: flex;
+  min-height: 400px;
+  flex-wrap: wrap-reverse;
+}
+
+.about-content-wrapper .about-text-container,
+.about-content-wrapper .about-profile-container {
+  flex: 1 0 300px;
+  position: relative;
+}
+
+.about-content-wrapper .about-text-container {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.about-content-wrapper .about-text-container::after {
+  content: '';
+  background-image: url('../Assets/forest/fern.png');
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+
+.section-wrapper.about-section-water
+  .about-content-wrapper
+  .about-text-container::after {
+  background-image: url('../Assets/water/kelp-drawing-algae.png');
+  opacity: 0.3;
+}
+
+.about-content-wrapper .profile-photo-container {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  border-radius: 100px;
+  overflow: hidden;
+  position: relative;
+  border: 5px solid #eee;
+}
+
+.about-content-wrapper .profile-photo-container .profile-photo {
+  height: 100%;
+  width: 100%;
+}
+
+.about-content-wrapper .profile-photo-container .sunglasses-photo.casual-mode {
+  top: 35px;
+  transition: top 1s ease;
+}
+
+.about-content-wrapper .profile-photo-container .sunglasses-photo {
+  position: absolute;
+  top: -80px;
+  left: 28px;
+  z-index: 10;
+  width: 185px;
+  transform: rotate(-10deg);
+  transition: top 1s ease;
+}
+
+.about-content-wrapper .about-profile-container {
+  justify-content: center;
+}
+
+.about-content-wrapper .networking-links-container a {
+  width: 30px;
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+.about-content-wrapper .networking-links-container a img {
+  width: 100%;
+}
+
+.section-wrapper .networking-links-container svg {
+  fill: #727b68;
+}
+
+.section-wrapper .networking-links-container svg:hover {
+  fill: #59624f;
+}
+
+.section-wrapper.about-section-water .networking-links-container svg {
+  fill: #4283ad;
+}
+
+.section-wrapper.about-section-water .networking-links-container svg:hover {
+  fill: #296a94;
+}
+
+.section-wrapper .networking-links-container {
+  padding: 0.5rem 0rem 1rem 0rem;
+}
+
+.section-wrapper.about-section .primary-btn {
+  width: 30%;
+}
+
+.section-wrapper.about-section-water .primary-btn {
+  background-color: #4283ad;
+}
+
+.section-wrapper.about-section-water .primary-btn:hover {
+  background-color: #296a94;
+}
+
+@media all and (max-width: 480px) {
+  .section-wrapper {
+    padding: 2rem;
+  }
+}
