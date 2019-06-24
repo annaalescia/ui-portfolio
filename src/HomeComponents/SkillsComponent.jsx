@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Fade from 'react-reveal/Fade';
 import { skillsData } from '../data';
 
 import './SkillsComponent.css';
@@ -109,34 +110,36 @@ class SkillsComponent extends Component {
             </div>
           </li>
         </ul>
-        <div className="skills-flex-container skills-text-container">
-          {skillSelected === '' && (
-            <div className="default-skill-text">
+        <Fade spy={skillSelected}>
+          <div className="skills-flex-container skills-text-container">
+            {skillSelected === '' && (
+              <div className="default-skill-text">
+                <div className="skill-header">
+                  <h1>Skills</h1>
+                  <div className="header-underline" />
+                </div>
+                <p>Click on one of the icons in this section to learn more</p>
+              </div>
+            )}
+            {skillSelected !== '' && (
               <div className="skill-header">
-                <h1>Skills</h1>
-                <div className="header-underline" />
+                <div className="skill-text">
+                  <h1>{skillInformation.skill}</h1>
+                  <div className="header-underline" />
+                </div>
+                <p>
+                  {skillInformation.skillLevel} knowledge of the features of{' '}
+                  {skillInformation.skill} including but not limited to
+                </p>
+                <ul>
+                  {skillInformation.details.map((detail, i) => (
+                    <li key={i}>{detail}</li>
+                  ))}
+                </ul>
               </div>
-              <p>Click on one of the icons in this section to learn more</p>
-            </div>
-          )}
-          {skillSelected !== '' && (
-            <div className="skill-header">
-              <div className="skill-text">
-                <h1>{skillInformation.skill}</h1>
-                <div className="header-underline" />
-              </div>
-              <p>
-                {skillInformation.skillLevel} knowledge of the features of{' '}
-                {skillInformation.skill} including but not limited to
-              </p>
-              <ul>
-                {skillInformation.details.map((detail, i) => (
-                  <li key={i}>{detail}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </div>
+            )}
+          </div>
+        </Fade>
       </div>
     );
   }

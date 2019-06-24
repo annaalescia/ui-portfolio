@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import profilePhoto from '../Assets/general/portfolio-photo.jpg';
+import Fade from 'react-reveal/Fade';
 import sunglasses from '../Assets/general/sunglasses.png';
 import './AboutComponent.css';
 
@@ -28,7 +29,7 @@ class AboutComponent extends Component {
         <div className="about-content-wrapper">
           <div className="about-text-container">
             {isCasual ? (
-              <React.Fragment>
+              <Fade top spy={isCasual}>
                 <p>
                   A little bit more about me... I graduated in 2014 from Georgia
                   Tech with a degree in Chemical Engineering. After college, I
@@ -46,9 +47,9 @@ class AboutComponent extends Component {
                   games, going to concerts/festivals, eating ramen, and indoor
                   rock climbing.
                 </p>
-              </React.Fragment>
+              </Fade>
             ) : (
-              <React.Fragment>
+              <Fade bottom spy={isCasual}>
                 <p>
                   Hey there, my name is Anna McBeath and I am a front-end web
                   developer. I specialize mainly in JavaScript and React/Redux,
@@ -66,7 +67,7 @@ class AboutComponent extends Component {
                   about what I do outside of coding, feel free switch this
                   section to casual mode.
                 </p>
-              </React.Fragment>
+              </Fade>
             )}
           </div>
           <div className="about-profile-container">
@@ -80,6 +81,7 @@ class AboutComponent extends Component {
                 alt="sunglasses"
               />
             </div>
+
             <div className="networking-links-container">
               <a href="https://www.linkedin.com/in/anna-mcbeath-bb877132/">
                 <svg

@@ -66,7 +66,7 @@ export const skillsData = [
       'Use of the Angular CLI',
       'Using RxJS subscriptions and observables for handling data',
       'Writing custom pipes and directives to manipulate HTML views and data formatting',
-      'Testing angular components and services using Karma/Jasmine',
+      'Testing Angular components and services using Karma/Jasmine',
       'Using UI frameworks that work well with Angular such as Angular Material as well as building out custom UI components',
       'Projects where this skill used: PT&C'
     ]
