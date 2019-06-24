@@ -30,32 +30,35 @@ class AboutComponent extends Component {
             {isCasual ? (
               <React.Fragment>
                 <p>
-                  Hey again, a little more about me and what I like to do when
-                  I'm not staring at VS code for 8 hours a day.
+                  A little bit more about me... I graduated in 2014 from Georgia
+                  Tech with a degree in Chemical Engineering. After college, I
+                  took a tiny, little detour from my original career path and
+                  ended up working at Intellinet, an IT consulting company just
+                  outside of the city. Through my company I've gotten the
+                  opportunity to collaborate with a variety of clients
+                  developing custom-built, responsive interfaces utilizing the
+                  latest UI tools. I live in Atlanta with my fluffy, orange cat
+                  named Butters.
+                </p>
+                <p>
+                  When I'm not spending busy working on client projects or my
+                  own side coding projects I enjoy hiking, traveling, video
+                  games, going to concerts/festivals, eating ramen, and indoor
+                  rock climbing.
                 </p>
               </React.Fragment>
             ) : (
               <React.Fragment>
                 <p>
                   Hey there, my name is Anna McBeath and I am a front-end web
-                  developer living in Atlanta, GA. I graduated in 2014 from
-                  Georgia Tech with a degree in Chemical Engineering. After
-                  college, I took a tiny, little detour from my original career
-                  path and ended up working at Intellinet, an IT consulting
-                  company just outside of the city. Through my company I've
-                  gotten the opportunity to collaborate with a variety of
-                  clients developing custom-built, responsive interfaces
-                  utilizing the latest UI tools.
-                </p>
-                <p>
-                  I specialize mainly in JavaScript and React/Redux, however I
-                  do have experience working with a wide variety of front-end
-                  libraries/ frameworks and I am not afraid to jump right into
-                  learning new technologies. All of my UI knowledge is either
-                  self-taught or from on-the-job mentorship from some my more
-                  experienced collegues. This portfolio site was designed and
-                  built from scratch by me using React and of course HTML and
-                  CSS.
+                  developer. I specialize mainly in JavaScript and React/Redux,
+                  however I do have experience working with a wide variety of
+                  front-end libraries/ frameworks and I am not afraid to jump
+                  right into learning new technologies. All of my UI knowledge
+                  is either self-taught or from on-the-job mentorship from some
+                  my more experienced collegues. This portfolio site was
+                  designed and built from scratch by me using React and of
+                  course HTML and CSS.
                 </p>
                 <p>
                   To learn more details about some of the projects that I have

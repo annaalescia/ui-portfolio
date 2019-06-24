@@ -1,0 +1,9 @@
+.footer-wrapper {
+  background-color: #182c25;
+  padding: 3rem;
+  color: #fff;
+}
+
+.footer-wrapper.footer-water {
+  background-color: #192841;
+}

@@ -32,7 +32,7 @@ class App extends Component {
           <Route path="/:id" render={_ => <ProjectPage theme={theme} />} />
         </Switch>
 
-        <Footer />
+        <Footer theme={theme} />
       </div>
     );
   }
